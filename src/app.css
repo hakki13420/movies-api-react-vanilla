@@ -1,0 +1,60 @@
+.container {
+    padding: 1rem;
+}
+
+.container header form {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    input {
+        border-radius: 4px;
+        padding: 5px 20px 5px 2px;
+
+    }
+
+    button {
+        border-radius: 4px;
+        background-color: teal;
+        padding: 5px 15px;
+        color: white;
+        transition: all .4s ease-in;
+    }
+
+    &:hover {
+        opacity: .8;
+    }
+}
+
+
+.container .movies {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 1rem;
+    margin: 2rem 0 0;
+}
+
+.container .movies article {
+    border: 1px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 2px 3px 2px lightgray;
+    border-radius: 4px;
+}
+
+.container .movies img {
+    object-fit: contain;
+    height: 400px;
+    width: 80%;
+}
+
+.container .movies article .meta {
+    padding: 1rem;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
